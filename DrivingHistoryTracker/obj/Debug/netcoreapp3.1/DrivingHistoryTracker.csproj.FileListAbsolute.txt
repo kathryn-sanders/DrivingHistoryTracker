@@ -1,0 +1,22 @@
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.exe
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.deps.json
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.runtimeconfig.json
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.runtimeconfig.dev.json
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.dll
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.pdb
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.csprojAssemblyReference.cache
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.AssemblyInfoInputs.cache
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.AssemblyInfo.cs
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.dll
+D:\Users\kathr\New folder\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.pdb
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.exe
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.deps.json
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.runtimeconfig.json
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.runtimeconfig.dev.json
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.dll
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\bin\Debug\netcoreapp3.1\DrivingHistoryTracker.pdb
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.csprojAssemblyReference.cache
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.AssemblyInfoInputs.cache
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.AssemblyInfo.cs
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.dll
+D:\Users\kathr\GitHub\DrivingHistoryTracker\DrivingHistoryTracker\obj\Debug\netcoreapp3.1\DrivingHistoryTracker.pdb

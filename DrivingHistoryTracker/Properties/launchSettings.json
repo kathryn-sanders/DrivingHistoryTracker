@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DrivingHistoryTracker": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Users\\kathr\\GitHub\\DrivingHistoryTracker\\input.txt\" \"D:\\Users\\kathr\\GitHub\\DrivingHistoryTracker\\output.txt\""
+    }
+  }
+}

@@ -6,7 +6,7 @@ namespace DrivingHistoryTracker
 {
     public class Trip
     {
-        public string Driver { get; set; }
+        public string DriverName { get; set; }
         public TimeSpan StartTime { get; set; }
         public TimeSpan StopTime { get; set; }
         public double MilesDriven { get; set; }
@@ -24,14 +24,21 @@ namespace DrivingHistoryTracker
         {
             get
             {
-                return (DurationInMinutes / MilesDriven) / 60;
+                if (DurationInMinutes > 0)
+                {
+                    return (MilesDriven / DurationInMinutes) * 60;
+                }
+                else
+                {
+                    return 0;
+                }
             }
             set { }
         }
 
         public Trip(string driverName, string startTime, string stopTime, string milesDriven)
         {
-            Driver = driverName;
+            DriverName = driverName;
             StartTime = TimeSpan.Parse(startTime);
             StopTime = TimeSpan.Parse(stopTime);
             MilesDriven = double.Parse(milesDriven);

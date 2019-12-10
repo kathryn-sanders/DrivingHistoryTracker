@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingHistoryTracker", "DrivingHistoryTracker\DrivingHistoryTracker.csproj", "{2B8DC960-A7AD-4037-B80D-E309C04BE1E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingHistoryTracker", "DrivingHistoryTracker\DrivingHistoryTracker.csproj", "{2B8DC960-A7AD-4037-B80D-E309C04BE1E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingHistoryTracker.Tests", "DrivingHistoryTrackerTests\DrivingHistoryTracker.Tests.csproj", "{988BD73B-47EC-4309-B0AD-14030659B058}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2B8DC960-A7AD-4037-B80D-E309C04BE1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B8DC960-A7AD-4037-B80D-E309C04BE1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B8DC960-A7AD-4037-B80D-E309C04BE1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988BD73B-47EC-4309-B0AD-14030659B058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988BD73B-47EC-4309-B0AD-14030659B058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988BD73B-47EC-4309-B0AD-14030659B058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988BD73B-47EC-4309-B0AD-14030659B058}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

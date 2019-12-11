@@ -39,7 +39,7 @@ namespace DrivingHistoryTracker
             {
                 if (TripHistory.Count > 0)
                 {
-                    return (TotalMilesDriven / TotalTimeDrivenInMinutes) / 60;
+                    return (TotalMilesDriven / TotalTimeDrivenInMinutes) * 60;
                 }
                 else
                 {

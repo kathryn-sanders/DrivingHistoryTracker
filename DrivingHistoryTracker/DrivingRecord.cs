@@ -39,7 +39,7 @@ namespace DrivingHistoryTracker
                     string milesDriven = lineData[4];
 
                     Trip newTrip = new Trip(driverName, startTime, endTime, milesDriven);
-                    if (newTrip.AvgTripSpeed < 5 || newTrip.AvgTripSpeed > 100)
+                    if (newTrip.AvgTripSpeed > 5 || newTrip.AvgTripSpeed < 100)
                     {
                         DriverOverview[driverName].AddTrip(newTrip);
                     }

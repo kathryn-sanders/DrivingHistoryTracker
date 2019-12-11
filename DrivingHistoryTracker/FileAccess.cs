@@ -45,6 +45,8 @@ namespace DrivingHistoryTracker
                         recordWriter.WriteLine($"{ kvp.Value.DriverName}: {Math.Round(kvp.Value.TotalMilesDriven)} miles @ {Math.Round(kvp.Value.AverageSpeed)} mph");
                     }
                 }
+
+                Console.WriteLine("Report Generation Successful! Press the enter key to exit.");
             }
             catch (IOException)
             {
@@ -63,6 +65,8 @@ namespace DrivingHistoryTracker
                         recordWriter.WriteLine($"{ kvp.Value.DriverName}: {Math.Round(kvp.Value.TotalMilesDriven)} miles @ {Math.Round(kvp.Value.AverageSpeed)} mph");
                     }
                 }
+
+                Console.WriteLine("Report Generation Successful! Press the enter key to close.");
             }
             catch (IOException)
             {

@@ -14,7 +14,7 @@ namespace DrivingHistoryTracker
         {
             get
             {
-                TimeSpan interval = StopTime - StartTime;
+                TimeSpan interval = StopTime.Subtract(StartTime);
                 return interval.TotalMinutes;
             }
             set { }

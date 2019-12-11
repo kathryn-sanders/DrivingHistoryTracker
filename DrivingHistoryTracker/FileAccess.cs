@@ -32,7 +32,7 @@ namespace DrivingHistoryTracker
             return rawFileData;
         }
 
-        public static void WriteToRecord(Dictionary<string, Driver> DriverOverview)
+        public static void WriteToRecord(Dictionary<string, Driver> DriverDB)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace DrivingHistoryTracker
                 Console.WriteLine($"Report can be found at {currentDirectory}/Report.txt");
                 using (StreamWriter recordWriter = new StreamWriter($"{currentDirectory}/Report.txt", false))
                 {
-                    foreach (KeyValuePair<string, Driver> kvp in DriverOverview)
+                    foreach (KeyValuePair<string, Driver> kvp in DriverDB)
                     {
                         recordWriter.WriteLine($"{ kvp.Value.DriverName}: {Math.Round(kvp.Value.TotalMilesDriven)} miles @ {Math.Round(kvp.Value.AverageSpeed)} mph");
                     }
@@ -54,13 +54,13 @@ namespace DrivingHistoryTracker
             }
         }
 
-        public static void WriteToRecord(Dictionary<string, Driver> DriverOverview, string outputPath)
+        public static void WriteToRecord(Dictionary<string, Driver> DriverDB, string outputPath)
         {
             try
             {
                 using (StreamWriter recordWriter = new StreamWriter(outputPath, false))
                 {
-                    foreach (KeyValuePair<string, Driver> kvp in DriverOverview)
+                    foreach (KeyValuePair<string, Driver> kvp in DriverDB)
                     {
                         recordWriter.WriteLine($"{ kvp.Value.DriverName}: {Math.Round(kvp.Value.TotalMilesDriven)} miles @ {Math.Round(kvp.Value.AverageSpeed)} mph");
                     }

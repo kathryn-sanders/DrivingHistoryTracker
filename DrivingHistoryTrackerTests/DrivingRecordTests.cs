@@ -6,12 +6,12 @@ using System.Text;
 namespace DrivingHistoryTracker.Tests
 {
     [TestClass]
-    public class DrivingRecordTests
+    public class DrivingDALTests
     {
         Driver testDriverObj1;
         Driver testDriverObj2;
         Driver testDriverObj3;
-        DrivingRecord testRecord1;
+        DrivingDAL testDao;
 
         [TestInitialize]
         public void Initialize()
@@ -35,18 +35,18 @@ namespace DrivingHistoryTracker.Tests
             testInput.Add(testString5);
             testInput.Add(testString6);
 
-            testRecord1 = new DrivingRecord(testInput);
+            testDao = new DrivingDAL(testInput);
         }
 
         [TestMethod]
-        public void DrivingRecord_Constructor_Adds_New_Data_To_DriverOverview()
+        public void DrivingRecord_Constructor_Adds_New_Data_To_DriverDB()
         {
 
-            Assert.AreEqual(2, testRecord1.DriverOverview.Count);
-            CollectionAssert.Contains(testRecord1.DriverOverview.Keys, "testDriver1");
-            CollectionAssert.Contains(testRecord1.DriverOverview.Keys, "testDriver2");
-            Assert.AreEqual(testRecord1.DriverOverview["testDriver1"].DriverName, testDriverObj1.DriverName);
-            Assert.AreEqual(testRecord1.DriverOverview["testDriver2"].DriverName, testDriverObj2.DriverName);
+            Assert.AreEqual(3, testDao.DriverDB.Count);
+            CollectionAssert.Contains(testDao.DriverDB.Keys, "testDriver1");
+            CollectionAssert.Contains(testDao.DriverDB.Keys, "testDriver2");
+            Assert.AreEqual(testDao.DriverDB["testDriver1"].DriverName, testDriverObj1.DriverName);
+            Assert.AreEqual(testDao.DriverDB["testDriver2"].DriverName, testDriverObj2.DriverName);
         }
 
         [TestMethod]
@@ -57,8 +57,8 @@ namespace DrivingHistoryTracker.Tests
             sortResult.Add("testDriver3", testDriverObj3);
             sortResult.Add("testDriver2", testDriverObj2);
 
-            Assert.AreEqual(sortResult.Count, testRecord1.SortDictionary(testRecord1.DriverOverview).Count);
-            CollectionAssert.AreEqual(sortResult.Keys, testRecord1.SortDictionary(testRecord1.DriverOverview).Keys);
+            Assert.AreEqual(sortResult.Count, testDao.SortDictionary(testDao.DriverDB).Count);
+            CollectionAssert.AreEqual(sortResult.Keys, testDao.SortDictionary(testDao.DriverDB).Keys);
 
 
 

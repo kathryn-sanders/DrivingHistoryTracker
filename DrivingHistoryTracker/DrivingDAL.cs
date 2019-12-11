@@ -5,19 +5,19 @@ using System.Linq;
 
 namespace DrivingHistoryTracker
 {
-    public class DrivingRecord
+    public class DrivingDAL
     {
-        public Dictionary<string, Driver> DriverOverview { get; set; } = new Dictionary<string, Driver>();
+        public Dictionary<string, Driver> DriverDB { get; set; } = new Dictionary<string, Driver>();
 
-        public Dictionary<string, Driver> SortedDriverOverview
+        public Dictionary<string, Driver> SortedDriverDB
         {
             get
             {
-                return SortDictionary(DriverOverview);
+                return SortDictionary(DriverDB);
             }
         }
 
-        public DrivingRecord(List<string> rawFileData)
+        public DrivingDAL(List<string> rawFileData)
         {
             foreach (string line in rawFileData)
             {
@@ -29,7 +29,7 @@ namespace DrivingHistoryTracker
                 if (command.ToLower() == "driver")
                 {
                     Driver newDriver = new Driver(driverName);
-                    DriverOverview[driverName] = newDriver;
+                    DriverDB[driverName] = newDriver;
                 }
 
                 if (command.ToLower() == "trip")
@@ -41,7 +41,7 @@ namespace DrivingHistoryTracker
                     Trip newTrip = new Trip(driverName, startTime, endTime, milesDriven);
                     if (newTrip.AvgTripSpeed > 5 || newTrip.AvgTripSpeed < 100)
                     {
-                        DriverOverview[driverName].AddTrip(newTrip);
+                        DriverDB[driverName].AddTrip(newTrip);
                     }
                 }
             }
@@ -51,9 +51,9 @@ namespace DrivingHistoryTracker
         {
             List<KeyValuePair<string, Driver>> SortedKVPs = originalDictionary.OrderByDescending(unsortedKVP => unsortedKVP.Value.TotalMilesDriven).ToList();
 
-            Dictionary<string, Driver> SortedDriverOverview = SortedKVPs.ToDictionary(SortedKVPs => SortedKVPs.Key, SortedKVPs => SortedKVPs.Value);
+            Dictionary<string, Driver> SortedDriverDB = SortedKVPs.ToDictionary(SortedKVPs => SortedKVPs.Key, SortedKVPs => SortedKVPs.Value);
 
-            return SortedDriverOverview;
+            return SortedDriverDB;
         }
 
     }

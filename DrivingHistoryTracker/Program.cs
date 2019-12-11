@@ -11,15 +11,15 @@ namespace DrivingHistoryTracker
 
 
             List<string> rawFileData = FileAccess.ReadFile(inputFilePath);
-            DrivingRecord record = new DrivingRecord(rawFileData);
+            DrivingDAL drivingDao = new DrivingDAL(rawFileData);
 
             if (args.Length > 1)
             {
-                FileAccess.WriteToRecord(record.SortedDriverOverview, args[1]);
+                FileAccess.WriteToRecord(drivingDao.SortedDriverDB, args[1]);
             }
             else
             {
-                FileAccess.WriteToRecord(record.SortedDriverOverview);
+                FileAccess.WriteToRecord(drivingDao.SortedDriverDB);
             }
             Console.ReadLine();
         }
